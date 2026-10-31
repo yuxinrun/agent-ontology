@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./logo.svg" />
+    <link rel="canonical" href="https://yuxinrun.github.io/agent-ontology/" />
+    <meta name="theme-color" content="#f5f7ff" />
+    <meta name="author" content="鱼心 · Yuxin" />
+    <title>智能体本体论实战指南 · Agent Ontology Field Guide</title>
+    <meta
+      name="description"
+      content="写给程序员的 Agent Ontology 实战指南：从本体论、语义层到多智能体编排与 MCP，12 章图解、代码与落地案例，中英双语。作者鱼心，鱼心快跑出品。"
+    />
+    <meta
+      name="keywords"
+      content="Agent Ontology, 智能体本体论, AI Agent, MCP, 多智能体, LangChain, OpenAI Agents SDK, 知识图谱, 语义层"
+    />
+    <meta property="og:title" content="智能体本体论实战指南 · Agent Ontology Field Guide" />
+    <meta
+      property="og:description"
+      content="别让 Agent 只会聊天，给它一张业务地图。12 章系统讲解 Agent Ontology，从概念到落地。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yuxinrun.github.io/agent-ontology/" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:site_name" content="鱼心快跑 · Yuxin Runs" />
+    <meta property="og:image" content="https://yuxinrun.github.io/agent-ontology/og-cover.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Agent Ontology Field Guide · 智能体本体论实战指南" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="智能体本体论实战指南 · Agent Ontology Field Guide" />
+    <meta name="twitter:description" content="别让 Agent 只会聊天，给它一张业务地图。12 章系统讲解 Agent Ontology。" />
+    <meta name="twitter:image" content="https://yuxinrun.github.io/agent-ontology/og-cover.png" />
+    <script>
+      ;(function () {
+        try {
+          var saved = localStorage.getItem('ao-theme') || 'system'
+          var dark = window.matchMedia('(prefers-color-scheme: dark)').matches
+          var theme = saved === 'system' ? (dark ? 'dark' : 'light') : saved
+          document.documentElement.dataset.theme = theme
+          document.documentElement.style.colorScheme = theme
+          var lang = localStorage.getItem('ao-lang')
+          if (!lang) lang = (navigator.language || 'zh').toLowerCase().indexOf('zh') === 0 ? 'zh' : 'en'
+          document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en'
+        } catch (e) {}
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>This guide needs JavaScript. 本指南需要启用 JavaScript。</noscript>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

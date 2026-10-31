@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Agent Ontology logo">
+  <defs>
+    <linearGradient id="bg" x1="8" y1="4" x2="58" y2="62" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4f46e5"/>
+      <stop offset=".52" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#0891b2"/>
+    </linearGradient>
+    <radialGradient id="core" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".55" stop-color="#c7d2fe"/>
+      <stop offset="1" stop-color="#67e8f9"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect x="3" y="3" width="58" height="58" rx="17" fill="url(#bg)"/>
+  <rect x="3" y="3" width="58" height="58" rx="17" fill="none" stroke="rgba(255,255,255,.28)" stroke-width="1.2"/>
+  <g stroke="rgba(255,255,255,.62)" stroke-width="1.5" stroke-linecap="round">
+    <path d="M32 32 L32 15"/><path d="M32 32 L46.7 23.5"/><path d="M32 32 L46.7 40.5"/>
+    <path d="M32 32 L32 49"/><path d="M32 32 L17.3 40.5"/><path d="M32 32 L17.3 23.5"/>
+  </g>
+  <g fill="#ffffff" filter="url(#glow)">
+    <circle cx="32" cy="14.5" r="3.1"/><circle cx="47.5" cy="23.5" r="3.1"/>
+    <circle cx="47.5" cy="40.5" r="3.1"/><circle cx="32" cy="49.5" r="3.1"/>
+    <circle cx="16.5" cy="40.5" r="3.1"/><circle cx="16.5" cy="23.5" r="3.1"/>
+  </g>
+  <circle cx="32" cy="32" r="9.4" fill="url(#core)"/>
+  <circle cx="32" cy="32" r="9.4" fill="none" stroke="rgba(255,255,255,.85)" stroke-width="1.2"/>
+  <circle cx="32" cy="32" r="3.4" fill="#4f46e5"/>
+  <circle cx="28.8" cy="28.6" r="1.1" fill="#ffffff" opacity=".9"/>
+</svg>
